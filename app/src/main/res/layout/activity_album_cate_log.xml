@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.jinmiao.bbs.perfectstoryapp.fragment.home.album.AlbumCateLogActivity">
+
+    <LinearLayout
+        android:id="@+id/album_Title_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@drawable/nav_bg">
+
+
+        <ImageView
+            android:id="@+id/music_list_comeback_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/nav_previous_normal"
+            />
+        <TextView
+            android:id="@+id/album_Title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="专辑列表"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/albumList_ListView_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_below="@id/album_Title_Layout"
+       >
+
+    </ListView>
+
+</RelativeLayout>

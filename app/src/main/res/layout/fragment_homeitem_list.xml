@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  标题  -->
+    <RelativeLayout
+        android:id="@+id/no_user_title_layout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nav_bg">
+
+        <ImageView
+            android:id="@+id/search_music_Home_Btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ico_search_music"/>
+
+        <TextView
+            android:id="@+id/bar_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/home_top_title"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/nowPlaySingListPageImg_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/playing_sing"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/no_user_title_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--睡前故事-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/beforeSleepStory"></TextView>
+            <!-- 睡前故事专辑列表 -->
+            <ListView
+                android:id="@+id/beforeSleepStoryListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <!--儿童小说-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/kidNovelStory"></TextView>
+            <!-- 儿童小说专辑列表 -->
+            <ListView
+                android:id="@+id/kidNovelListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="230dp" />
+
+            <!--诗歌散文-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/shigesanwen"></TextView>
+
+            <ListView
+                android:id="@+id/shigesanwen_ListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <!--国学启蒙-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/GuoXueQimeng"></TextView>
+
+            <ListView
+                android:id="@+id/guoxueqimeng_ListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="230dp" />
+
+            <!--课文朗读-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/StandardRead"></TextView>
+            <!-- 课文朗读ListView-->
+            <ListView
+                android:id="@+id/kewenlangduListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="230dp" />
+            <!--儿童电台-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/kidWorld"></TextView>
+            <!-- 儿童电台专辑列表 -->
+            <ListView
+                android:id="@+id/kidWorldListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <!--英语听力-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/EnglishListen"></TextView>
+            <!-- 英语听力专辑列表 -->
+            <ListView
+                android:id="@+id/EnglishListenning_ListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <!--有声绘本-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_play_ico"
+                android:text="@string/haveSoundHuiben"></TextView>
+            <!-- 有声绘本专辑列表 -->
+            <ListView
+                android:id="@+id/haveSoundHuiben_ListView_id"
+                android:layout_width="match_parent"
+                android:layout_height="230dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

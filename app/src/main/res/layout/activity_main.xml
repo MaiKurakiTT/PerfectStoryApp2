@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.jinmiao.bbs.perfectstoryapp.main.MainActivity">
+
+    <!--  内容  -->
+    <FrameLayout
+        android:id="@+id/tab_Content_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tab_bottom_Relativelayout"
+        >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_bottom_Relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/bar_bottom"></include>
+    </RelativeLayout>
+
+</RelativeLayout>

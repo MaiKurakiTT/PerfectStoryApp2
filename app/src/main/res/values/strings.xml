@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">好好听故事网</string>
+    <string name="img_describe">图片描述</string>
+
+    <!--底部导航-->
+    <string name="bottom_story">故事</string>
+    <string name="bottom_me">我的</string>
+
+    <!--首页-->
+    <string name="home_top_title">好好听故事网</string>
+    <string name="no_data">暂无相关数据</string>
+
+    <!--个人中心-->
+    <string name="usercenter_top_title">登录好好听故事网</string>
+    <string name="prompt_accout_edit">账 号</string>
+    <string name="prompt_password_edit">密 码</string>
+    <string name="register_button">注册</string>
+    <string name="login_button">登录</string>
+
+    <!-- 登录后的用户名-->
+    <string name="show_login_username">张三</string>
+    <string name="afterlogin_title">我的</string>
+
+    <!--首页加载分类list-->
+    <string name="beforeSleepStory">睡前故事</string>
+    <string name="kidNovelStory">儿童小说</string>
+    <string name="shigesanwen">诗歌散文</string>
+    <string name="GuoXueQimeng">国学启蒙</string>
+    <string name="StandardRead">课文朗读</string>
+    <string name="kidWorld">儿童电台</string>
+    <string name="EnglishListen">英语听力</string>
+    <string name="haveSoundHuiben">有声绘本</string>
+
+    <integer name="time">90000</integer>
+
+    <!--接口-->
+    <!--获取顶级菜单内容接口-->
+    <string name="getOneCatalogStoryBaseURL">http://122.114.58.68:8066/AppService/SongsService.ashx</string>
+    <!-- 获取播放列表接口 -->
+    <string name="getMusicListURL">http://122.114.58.68:8066//AppService/SongsService.ashx</string>
+    <!-- MP3播放服务器地址 -->
+    <string name="MP3PlayHomeAddress">http://mp3.jinmiao.cn/mp3file/</string>
+
+    <string name="getALbumPictureBaseURL">http://www.zc532.com/uppic/</string>
+    <!--  登录接口 -->
+    <string name="LoginURL">http://122.114.58.68:8066/AppService/UserService.ashx</string>
+
+    <string name="BBSHome">http://www.zc532.com/vipindex.php</string>
+
+
+    <string name="music_name">歌曲名</string>
+    <string name="music_author">歌手</string>
+
+    <string name="siger">王妃</string>
+
+    <string name="info">操作:</string>
+    <string name="dialog_messenge">你确定要退出程序吗？</string>
+    <string name="confrim">确定</string>
+    <string name="cancel">取消</string>
+
+
+    <string name="LoadingImg">正在玩命加载中,请稍后...</string>
+
+
+
+    <string-array name="names" >
+        <item>睡前故事</item>
+        <item>儿童小说</item>
+        <item>诗歌散文</item>
+        <item>国学启蒙</item>
+        <item>课文朗读</item>
+        <item>儿童电台</item>
+        <item>英语听力</item>
+        <item>有声绘本</item>
+        <item>其他</item>
+    </string-array>
+
+
+
+</resources>

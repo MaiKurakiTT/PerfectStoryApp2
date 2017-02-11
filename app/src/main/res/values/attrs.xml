@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlingGalleryView">
+        <attr name="defaultScreen" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WebViewWithProgress">
+        <attr name="progressStyle" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+        <attr name="barHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>
